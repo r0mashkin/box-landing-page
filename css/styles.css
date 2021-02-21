@@ -30,8 +30,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #6c7279; /* font color */
-
   background-color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Container
@@ -60,12 +60,12 @@ body {
   align-items: center; /* align items on center (vertical) */
   padding: 30px 0 8px 0; /* distance between text and block */
 
-  border-bottom: 1px solid rgb(250, 188, 44); /* bottom line */
+  border-bottom: 1px solid rgb(222, 65, 25); /* bottom line */
 }
 
 .header__logo img {
   width: 100%;
-  max-width: 100px;
+  max-width: 200px;
 }
 
 /* Navigation
@@ -92,7 +92,7 @@ body {
 /* hover over link */
 .nav__link:hover {
   opacity: 1; /* disable opacity */
-  color: rgb(109, 237, 234);
+  color: red;
 }
 
 /* Intro
@@ -105,14 +105,72 @@ body {
   height: 750px;
   background-color: rgb(9, 39, 58); /* in case if image not loading */
   background: url(/img/intro-background.jpg) center;
+  box-shadow: inset 0 0 0 2000px rgba(9, 88, 111, 0.5); /* background image overlay */
   padding-top: 100px;
+}
+
+.intro__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.1);
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .intro__title {
   font-family: "Open Sans", sans-serif;
   font-size: 60px;
-  color: rgb(116, 83, 125);
+  color: rgb(250, 188, 44);
   font-weight: 700;
+  line-height: 1.1;
   text-transform: uppercase;
-  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); /* text shadow with opacity */
+}
+
+.intro__subtitle {
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+  line-height: 1.5;
+  font-weight: 600;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1.5); /* text shadow with opacity */
+}
+
+/* Button
+========== */
+
+.button {
+  display: inline-block; /* hybrid of block and inline elements */
+  margin-top: 50px;
+  vertical-align: top;
+  font-size: 13px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 3px; /* cut sharp corners */
+  border: 0; /* remove default border */
+  cursor: pointer; /* make a cursor as a "pointer" */
+
+  transition: background 0.1s linear;
+}
+
+.button--red {
+  background-color: rgb(222, 65, 25);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.5);
+}
+
+.button--red:hover {
+  background-color: red;
 }
