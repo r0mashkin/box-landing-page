@@ -1,5 +1,4 @@
-/* font-family: 'Cardo', serif;
-
+/*
 font-family: 'Raleway', sans-serif;
  */
 
@@ -98,24 +97,19 @@ body {
 /* Intro
 ========== */
 
+.introduction {
+  background-color: rgb(9, 12, 17);
+}
+
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 750px;
   background-color: rgb(9, 39, 58); /* in case if image not loading */
-  background: url(/img/intro-background.jpg) center;
+  background: url(/img/intro-background.jpg) center no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(9, 88, 111, 0.5); /* background image overlay */
   padding-top: 100px;
-}
-
-.intro__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 255, 0.1);
 }
 
 .intro__inner {
@@ -150,7 +144,7 @@ body {
 
 .button {
   display: inline-block; /* hybrid of block and inline elements */
-  margin-top: 50px;
+  margin-top: 125px;
   vertical-align: top;
   font-size: 13px;
   color: white;
@@ -173,4 +167,55 @@ body {
 
 .button--red:hover {
   background-color: red;
+}
+
+/* Reviews
+=========== */
+
+.feedback {
+  display: flex;
+  background-color: rgb(88, 73, 111);
+}
+
+.review {
+  display: flex;
+  margin: 100px 0;
+}
+
+.review__item {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.review__text {
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  color: white;
+  line-height: 1.5;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.author {
+  display: flex;
+  margin-top: 10px;
+  float: right;
+  align-items: center; /* align items on center (vertical) */
+}
+
+.author__icon {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.author__title {
+  margin-left: 15px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
 }
