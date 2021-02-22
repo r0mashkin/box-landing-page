@@ -231,12 +231,12 @@ body {
 .portfolio__container {
   display: flex;
   flex-wrap: wrap;
-  height: 800px;
+  height: 600px;
 }
 
 .portfolio__item {
   width: 25%;
-  height: 400px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid white;
