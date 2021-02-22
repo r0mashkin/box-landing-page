@@ -107,7 +107,7 @@ body {
   justify-content: center;
   height: 750px;
   background-color: rgb(9, 39, 58); /* in case if image not loading */
-  background: url(/img/intro-background.jpg) center no-repeat;
+  background: url(/img/pages/home/intro-background.jpg) center no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(9, 88, 111, 0.5); /* background image overlay */
   padding-top: 100px;
 }
@@ -189,6 +189,7 @@ body {
 }
 
 .review__text {
+  margin-bottom: 10px;
   font-family: "Cardo", serif;
   font-size: 25px;
   color: white;
@@ -203,9 +204,8 @@ body {
 
 .author {
   display: flex;
-  margin-top: 10px;
-  float: right;
   align-items: center; /* align items on center (vertical) */
+  justify-content: center;
 }
 
 .author__icon {
