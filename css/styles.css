@@ -179,6 +179,7 @@ body {
 
 .review {
   display: flex;
+  /* flex-wrap: wrap; */ /* move elements on a new line if they can't fit in one line */
   margin: 100px 0;
 }
 
