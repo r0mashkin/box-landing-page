@@ -38,8 +38,9 @@ body {
 
 .container {
   width: 100%; /* 100% width */
-  max-width: 1170px; /* maximum width */
+  max-width: 1200px; /* maximum width */
   margin: 0 auto; /* align on center */
+  padding: 0 15px;
 }
 
 /* Header
@@ -259,4 +260,82 @@ body {
   -webkit-filter: unset;
   filter: unset;
   cursor: default;
+}
+
+/* Team
+======== */
+
+.team {
+  margin: 100px 0 70px;
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team__item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.team__photo {
+  display: block;
+  margin-bottom: 20px;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.team__name {
+  margin-bottom: 8px;
+
+  font-size: 22px;
+  color: #2d3033;
+}
+
+.team__prof {
+  margin-bottom: 15px;
+
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+}
+
+.team__text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/* Social
+========== */
+
+.social {
+  display: flex;
+}
+
+.social__item {
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+}
+
+.social__logo {
+  width: 35px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.social__logo:hover {
+  -webkit-filter: unset;
+  filter: unset;
 }
